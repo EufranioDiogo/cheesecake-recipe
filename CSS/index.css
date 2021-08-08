@@ -1,0 +1,265 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+@font-face {
+    font-family: Play;
+    src: url('../FONTS/PlayfairDisplay-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: Mon;
+    src: url('../FONTS/Montserrat-Regular.ttf');
+}
+
+
+
+
+#main-content {
+    width: 80%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 5.0rem;
+}
+
+#main-content #recipe-name {
+    display: block;
+    position: relative;
+    margin-bottom: 1.5rem;
+    font-size: 4.0rem;
+    font-family: Play, 'Times New Roman', Times, serif;
+}
+
+#main-content #recipe-review {
+    font-size: 1.4rem;
+    color: #1a1a1a;
+    display: block;
+    position: relative;
+    width: 60%;
+    margin-left: 5.0rem;
+    font-style: italic;
+    font-family: Mon, Arial, Helvetica, sans-serif;
+}
+
+#main-content #recipe-image {
+    position: relative;
+    display: block;
+    margin: 2.0rem 0;
+    width: 100%;
+    border-radius: 1.0rem;
+    height: 45.0rem;
+    margin-top: 5.0rem;
+    object-fit: cover;
+}
+
+#recipe-content {
+    display: flex;
+    position: relative;
+    width: 100%;
+}
+
+#recipe-passes {
+    width: 70%;
+}
+
+.ingredients-instrutactions {
+    font-family: Play, 'Times New Roman', Times, serif;
+    font-size: 2.4rem;
+    margin: 2.2rem 0;
+}
+
+#recipe-passes h2 {
+    font-family: Play, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 2.0rem;
+    margin: 4.0rem 0;
+}
+
+.check-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.check-list li {
+    width: 100%;
+    position: relative;
+    margin: 0.5rem 0;
+    display: flex;
+}
+
+.check-list li p {
+    display: inline-block;
+    position: relative;
+    width: 85%;
+    font-family: Mon, Arial, Helvetica, sans-serif;
+    font-size: 1.4rem;
+    color: #333333;
+}
+
+input[type="checkbox"] {
+    width: 2.0rem;
+    height: 2.0rem;
+    margin-right: 1.5rem;
+}
+
+.recipe-steps-to-do {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.recipe-steps-to-do li {
+    position: relative;
+    display: flex;
+    margin: 1.0rem 0;
+    width: 100%;
+}
+
+.recipe-steps-to-do li .instrutaction-step {
+    position: relative;
+    display: inline-block;
+    width: 5%;
+    height: 4.0rem;
+    text-align: center;
+    background-color: #f09400;
+    color: #fff;
+    font-size: 2.5rem;
+    border-radius: 0.5rem;
+    line-height: 3.0rem;
+    margin-right: 1.5rem;
+    font-family: Play, Arial, Helvetica, sans-serif;
+}
+
+.recipe-steps-to-do li p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.6rem;
+    width: 90%;
+    line-height: 1.5;
+    font-family: Mon, Arial, Helvetica, sans-serif;
+    color: #333333;
+}
+
+#recipe-details {
+    width: 20%;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 0.5rem;
+    justify-content: center;
+    box-shadow: 0 0 1.0rem #9c9c9c26;
+    padding: 5.0rem 1.0rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+#recipe-details .recipe-detail {
+    position: relative;
+    display: flex;
+    width: 60%;
+    margin: 1.0rem 0;
+}
+
+.recipe-detail:first-child i {
+    color: #f09400;
+}
+
+.recipe-detail:first-child div h4 {
+    color: #f09400;
+}
+
+.recipe-detail i {
+    color: #4F4F4F;
+    margin-right: 1.0rem;
+    font-size: 2.5rem;
+}
+
+.recipe-detail div h4 {
+    text-transform: uppercase;
+    font-family: Mon, Arial, Helvetica, sans-serif;
+    font-size: 1.0rem;
+    color: #BDBDBD;
+}
+
+.recipe-detail div p {
+    font-size: 1.4rem;
+    color: #333333;
+    font-family: Mon, Arial, Helvetica, sans-serif;
+}
+
+.heading5 {
+    margin-top: 2.0rem;
+    font-size: 1.4rem;
+    color: #747474;
+    font-family: Mon, Arial, Helvetica, sans-serif;
+}
+
+.heading5 .link {
+    color: #747474;
+}
+
+footer {
+    position: relative;
+    margin-top: 6.0rem;
+    width: 100%;
+    text-align: center;
+}
+
+footer h3 {
+    padding: 1.5rem;
+    font-family: Mon, Arial, Helvetica, sans-serif;
+    font-size: 1.4rem;
+    color: #747474;
+}
+
+@media only screen and (min-width: 1600px) {
+    #main-content {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 514px) {
+    #main-content {
+        width: 95%;
+        margin-top: 1.0rem;
+    }
+    #main-content #recipe-review {
+        margin-left: 1.0rem;
+    }
+    #main-content #recipe-image {
+        height: 21.4rem !important;
+    }
+    #recipe-content {
+        flex-wrap: wrap;
+    }
+    #recipe-content #recipe-details {
+        position: relative;
+        width: 100%;
+        padding: 0;
+        box-shadow: none;
+    }
+    #recipe-details .recipe-detail:first-child {
+        width: 80%;
+        margin-left: -3.5rem;
+    }
+    #recipe-details .recipe-detail {
+        width: 30%;
+    }
+    #recipe-passes {
+        width: 100%;
+    }
+    .recipe-steps-to-do li p {
+        width: 70%;
+    }
+    .recipe-steps-to-do li .instrutaction-step {
+        width: 10%;
+    }
+}
